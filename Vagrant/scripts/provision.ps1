@@ -41,7 +41,6 @@ if ($env:COMPUTERNAME -imatch 'vagrant') {
   }
 } else {
   Write-Host -fore green "$('[{0:HH:mm}]' -f (Get-Date)) I am domain joined!"
-  }
 
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Setting the registry for auto-login..."
   Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name AutoAdminLogon -Value 1 -Type String
