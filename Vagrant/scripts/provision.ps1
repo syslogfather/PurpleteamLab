@@ -37,16 +37,6 @@ if ($env:COMPUTERNAME -imatch 'vagrant') {
 
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Current domain is set to 'workgroup'. Time to join the domain!"
 
-  if (!(Test-Path 'c:\Program Files\sysinternals\bginfo.exe')) {
-    Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Installing bginfo..."
-    . c:\vagrant\scripts\install-bginfo.ps1
-    # Set background to be "fitted" instead of "tiled"
-    Set-ItemProperty 'HKCU:\Control Panel\Desktop' -Name TileWallpaper -Value '0'
-    Set-ItemProperty 'HKCU:\Control Panel\Desktop' -Name WallpaperStyle -Value '6'
-    # Set Task Manager prefs
-    reg import "c:\vagrant\resources\windows\TaskManager.reg" 2>&1 | out-null
-  }
-
   if ($env:COMPUTERNAME -imatch 'ad') {
     . c:\vagrant\scripts\create-domain.ps1 172.16.20.10
   } else {
