@@ -44,9 +44,6 @@ if ($env:COMPUTERNAME -imatch 'vagrant') {
   }
 } else {
   Write-Host -fore green "$('[{0:HH:mm}]' -f (Get-Date)) I am domain joined!"
-  if (!(Test-Path 'c:\Program Files\sysinternals\bginfo.exe')) {
-    Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Installing bginfo..."
-    . c:\vagrant\scripts\install-bginfo.ps1
   }
 
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Setting the registry for auto-login..."
