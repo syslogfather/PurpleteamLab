@@ -36,9 +36,8 @@ if ($env:COMPUTERNAME -imatch 'vagrant') {
 
   if ($env:COMPUTERNAME -imatch 'ad') {
     . c:\vagrant\scripts\create-domain.ps1 172.16.20.10
-  } else {
-    . c:\vagrant\scripts\join-domain.ps1
-  }
+  } 
+  
 } else {
   Write-Host -fore green "$('[{0:HH:mm}]' -f (Get-Date)) I am domain joined!"
 
