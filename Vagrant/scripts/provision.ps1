@@ -30,9 +30,6 @@ if ($env:COMPUTERNAME -imatch 'vagrant') {
 
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Hostname is still the original one, skip provisioning for reboot..."
 
-  Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Installing bginfo..."
-  . c:\vagrant\scripts\install-bginfo.ps1
-
 } elseif ((gwmi win32_computersystem).partofdomain -eq $false) {
 
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Current domain is set to 'workgroup'. Time to join the domain!"
