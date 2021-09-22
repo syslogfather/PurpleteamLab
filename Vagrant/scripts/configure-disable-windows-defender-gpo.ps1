@@ -1,6 +1,6 @@
 # Purpose: Install the GPO that disables Windows Defender and AMSI
 Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Importing the GPO to disable Windows Defender..."
-Import-GPO -BackupGpoName 'Disable Windows Defender' -Path "c:\vagrant\resources\GPO\disable_windows_defender" -TargetName 'Disable Windows Defender' -CreateIfNeeded
+Import-GPO -BackupGpoName 'Disable Windows Defender' -Path "c:\vagrant\resources\windows\GPO\disable_windows_defender" -TargetName 'Disable Windows Defender' -CreateIfNeeded
 
 $OU = "ou=Workstations,dc=childsplay,dc=local"
 $gPLinks = $null
