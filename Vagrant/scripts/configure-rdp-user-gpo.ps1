@@ -1,6 +1,6 @@
 # Purpose: Install the GPO that allows childsplay\vagrant to RDP
 Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Importing the GPO to allow childsplay/vagrant to RDP..."
-Import-GPO -BackupGpoName 'Allow Domain Users RDP' -Path "c:\vagrant\resources\GPO\rdp_users" -MigrationTable "c:\vagrant\resources\GPO\rdp_users\rdp_users.migtable" -TargetName 'Allow Domain Users RDP' -CreateIfNeeded
+Import-GPO -BackupGpoName 'Allow Domain Users RDP' -Path "c:\vagrant\resources\windows\GPO\rdp_users" -MigrationTable "c:\vagrant\resources\windows\GPO\rdp_users\rdp_users.migtable" -TargetName 'Allow Domain Users RDP' -CreateIfNeeded
 
 $OU = "ou=Workstations,dc=childsplay,dc=local"
 $gPLinks = $null
