@@ -1,0 +1,12 @@
+[Unicode]
+Unicode=yes
+[Registry Values]
+MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy=4,1
+[Version]
+signature="$CHICAGO$"
+Revision=1
+[Group Membership]
+*S-1-5-32-573__Memberof =
+*S-1-5-32-573__Members = *S-1-5-20
+[Service General Setting]
+"WinRM",2,""
