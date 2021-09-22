@@ -2,7 +2,7 @@
 <GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
   <Identifier>
     <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{093D7A8E-043E-41D0-B0E1-7D633801A96E}</Identifier>
-    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">windomain.local</Domain>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">childsplay.local</Domain>
   </Identifier>
   <Name>Taskbar Layout</Name>
   <IncludeComments>true</IncludeComments>
@@ -179,11 +179,11 @@ In the value field, specify one or more of the following options, separated by c
             <q1:Additive>true</q1:Additive>
             <q1:Value>
               <q1:Element>
-                <q1:Name>\\windomain.local</q1:Name>
+                <q1:Name>\\childsplay.local</q1:Name>
                 <q1:Data>RequireMutualAuthentication=0,RequireIntegrity=0,RequirePrivacy=0</q1:Data>
               </q1:Element>
               <q1:Element>
-                <q1:Name>\\dc.windomain.local</q1:Name>
+                <q1:Name>\\ad.childsplay.local</q1:Name>
                 <q1:Data>RequireMutualAuthentication=0,RequireIntegrity=0,RequirePrivacy=0</q1:Data>
               </q1:Element>
             </q1:Value>
@@ -215,7 +215,7 @@ If you disable this setting or do not configure it, the Start screen layout won'
           <q1:EditText>
             <q1:Name>Start Layout File</q1:Name>
             <q1:State>Enabled</q1:State>
-            <q1:Value>\\windomain.local\SYSVOL\windomain.local\scripts\DetectionLabLayout.xml</q1:Value>
+            <q1:Value>\\childsplay.local\SYSVOL\childsplay.local\scripts\DetectionLabLayout.xml</q1:Value>
           </q1:EditText>
         </q1:Policy>
       </Extension>
@@ -229,19 +229,19 @@ If you disable this setting or do not configure it, the Start screen layout won'
   </User>
   <LinksTo>
     <SOMName>Domain Controllers</SOMName>
-    <SOMPath>windomain.local/Domain Controllers</SOMPath>
+    <SOMPath>childsplay.local/Domain Controllers</SOMPath>
     <Enabled>true</Enabled>
     <NoOverride>true</NoOverride>
   </LinksTo>
   <LinksTo>
     <SOMName>Servers</SOMName>
-    <SOMPath>windomain.local/Servers</SOMPath>
+    <SOMPath>childsplay.local/Servers</SOMPath>
     <Enabled>true</Enabled>
     <NoOverride>true</NoOverride>
   </LinksTo>
   <LinksTo>
     <SOMName>Workstations</SOMName>
-    <SOMPath>windomain.local/Workstations</SOMPath>
+    <SOMPath>childsplay.local/Workstations</SOMPath>
     <Enabled>true</Enabled>
     <NoOverride>true</NoOverride>
   </LinksTo>
