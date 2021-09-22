@@ -2,7 +2,7 @@
 <GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
   <Identifier>
     <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{D3AAF869-5E70-4C9E-BC4D-F7F86C450D5B}</Identifier>
-    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">windomain.local</Domain>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">childsplay.local</Domain>
   </Identifier>
   <Name>Allow Domain Users RDP</Name>
   <IncludeComments>true</IncludeComments>
@@ -13,11 +13,11 @@
     <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:S-1-5-21-3036387054-737866085-3744588598-1000G:DUD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3036387054-737866085-3744588598-1000)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3036387054-737866085-3744588598-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
     <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
       <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3036387054-737866085-3744588598-1000</SID>
-      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\vagrant</Name>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CHILDSPLAY\vagrant</Name>
     </Owner>
     <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
       <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3036387054-737866085-3744588598-513</SID>
-      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Users</Name>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CHILDSPLAY\Domain Users</Name>
     </Group>
     <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
     <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
@@ -25,7 +25,7 @@
       <TrusteePermissions>
         <Trustee>
           <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3036387054-737866085-3744588598-1000</SID>
-          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\vagrant</Name>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CHILDSPLAY\vagrant</Name>
         </Trustee>
         <Type xsi:type="PermissionType">
           <PermissionType>Allow</PermissionType>
@@ -65,7 +65,7 @@
       <TrusteePermissions>
         <Trustee>
           <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3036387054-737866085-3744588598-519</SID>
-          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Enterprise Admins</Name>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CHILDSPLAY\Enterprise Admins</Name>
         </Trustee>
         <Type xsi:type="PermissionType">
           <PermissionType>Allow</PermissionType>
@@ -105,7 +105,7 @@
       <TrusteePermissions>
         <Trustee>
           <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3036387054-737866085-3744588598-512</SID>
-          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Admins</Name>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CHILDSPLAY\Domain Admins</Name>
         </Trustee>
         <Type xsi:type="PermissionType">
           <PermissionType>Allow</PermissionType>
@@ -159,7 +159,7 @@
           </q1:GroupName>
           <q1:Member>
             <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3036387054-737866085-3744588598-513</SID>
-            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Users</Name>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CHILDSPLAY\Domain Users</Name>
           </q1:Member>
         </q1:RestrictedGroups>
       </Extension>
