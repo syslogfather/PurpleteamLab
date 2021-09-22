@@ -1,0 +1,15 @@
+[Unicode]
+Unicode=yes
+[Registry Values]
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\AuditNTLMInDomain=4,7
+MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\RestrictSendingNTLMTraffic=4,1
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\AuditReceivingNTLMTraffic=4,2
+[Version]
+signature="$CHICAGO$"
+Revision=1
+[Group Membership]
+*S-1-5-32-573__Memberof =
+*S-1-5-32-573__Members = *S-1-5-21-2099590610-328841986-2664697228-11659,*S-1-5-20
+[Service General Setting]
+"WinRM",2,""
