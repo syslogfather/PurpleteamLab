@@ -3,7 +3,7 @@ Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Importing the GPO to set the Taskbar 
 Import-GPO -BackupGpoName 'Taskbar Layout' -Path "c:\vagrant\resources\GPO\taskbar_layout" -TargetName 'Taskbar Layout' -CreateIfNeeded
 
 Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Copying layout file to SYSVOL..."
-Copy-Item "c:\vagrant\resources\GPO\taskbar_layout\DetectionLabLayout.xml" "c:\Windows\SYSVOL\domain\scripts\DetectionLabLayout.xml"
+Copy-Item "c:\vagrant\resources\GPO\taskbar_layout\PurpleteamLabLayout.xml" "c:\Windows\SYSVOL\domain\scripts\PurpleteamLabLayout.xml"
 
 $OU = "ou=Domain Controllers,dc=childsplay,dc=local"
 $gPLinks = $null
