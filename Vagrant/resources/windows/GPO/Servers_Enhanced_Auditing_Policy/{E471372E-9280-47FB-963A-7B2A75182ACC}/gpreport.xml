@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{E1359F60-FACE-461A-9C5D-D1DF07E51A79}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">windomain.local</Domain>
+  </Identifier>
+  <Name>Servers Enhanced Auditing Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2017-07-26T18:14:35</CreatedTime>
+  <ModifiedTime>2017-07-26T19:29:14</ModifiedTime>
+  <ReadTime>2017-07-26T19:30:11.7041327Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:S-1-5-21-3516590555-2060695796-1367554519-1000G:DUD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3516590555-2060695796-1367554519-1000)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3516590555-2060695796-1367554519-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3516590555-2060695796-1367554519-1000</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\vagrant</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3516590555-2060695796-1367554519-513</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Users</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3516590555-2060695796-1367554519-1000</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\vagrant</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>false</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3516590555-2060695796-1367554519-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3516590555-2060695796-1367554519-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>21</VersionDirectory>
+    <VersionSysvol>21</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:RestrictedGroups>
+          <q1:GroupName>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-573</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Event Log Readers</Name>
+          </q1:GroupName>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+        </q1:RestrictedGroups>
+        <q1:SystemServices>
+          <q1:Name>WinRM</q1:Name>
+          <q1:StartupMode>Automatic</q1:StartupMode>
+          <q1:SecurityDescriptor>
+            <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</PermissionsPresent>
+            <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+          </q1:SecurityDescriptor>
+        </q1:SystemServices>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Windows/Registry" xsi:type="q2:RegistrySettings">
+        <q2:RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+          <q2:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="RestrictRemoteSamEventThrottlingWindow" status="RestrictRemoteSamEventThrottlingWindow" image="12" changed="2017-03-28 20:28:29" uid="{7E71B8A5-03A7-456C-9CC9-941C1045C0E1}">
+            <q2:GPOSettingOrder>1</q2:GPOSettingOrder>
+            <q2:Properties action="U" displayDecimal="0" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Lsa" name="RestrictRemoteSamEventThrottlingWindow" type="REG_DWORD" value="00000000">
+              <q2:Values />
+            </q2:Properties>
+            <q2:Filters />
+          </q2:Registry>
+        </q2:RegistrySettings>
+      </Extension>
+      <Name>Windows Registry</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q3="http://www.microsoft.com/GroupPolicy/Settings/Auditing" xsi:type="q3:AuditSettings">
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Credential Validation</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce923f-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Other Account Logon Events</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9241-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Security Group Management</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9237-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit User Account Management</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9235-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit DPAPI Activity</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce922d-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit PNP Activity</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9248-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Process Creation</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce922b-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Process Termination</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce922c-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Account Lockout</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9217-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit User / Device Claims</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9247-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Group Membership</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9249-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Logoff</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9216-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Logon</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9215-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Other Logon/Logoff Events</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce921c-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Special Logon</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce921b-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Detailed File Share</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9244-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit File Share</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9224-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit File System</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce921d-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Filtering Platform Connection</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9226-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>2</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Other Object Access Events</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9227-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Registry</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce921e-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Removable Storage</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9245-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Audit Policy Change</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce922f-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Authentication Policy Change</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9230-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit MPSSVC Rule-Level Policy Change</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9232-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Other Policy Change Events</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9234-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Non Sensitive Privilege Use</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9229-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>2</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Sensitive Privilege Use</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9228-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Other System Events</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9214-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Security State Change</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9210-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit Security System Extension</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9211-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+        <q3:AuditSetting>
+          <q3:PolicyTarget>System</q3:PolicyTarget>
+          <q3:SubcategoryName>Audit System Integrity</q3:SubcategoryName>
+          <q3:SubcategoryGuid>{0cce9212-69ae-11d9-bed3-505054503030}</q3:SubcategoryGuid>
+          <q3:SettingValue>3</q3:SettingValue>
+        </q3:AuditSetting>
+      </Extension>
+      <Name>Advanced Audit Configuration</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q4="http://www.microsoft.com/GroupPolicy/Settings/WindowsFirewall" xsi:type="q4:WindowsFirewallSettings">
+        <q4:GlobalSettings>
+          <q4:PolicyVersion>
+            <q4:Value>534</q4:Value>
+          </q4:PolicyVersion>
+        </q4:GlobalSettings>
+        <q4:InboundFirewallRules>
+          <q4:Version>2.20</q4:Version>
+          <q4:Action>Allow</q4:Action>
+          <q4:Name>@FirewallAPI.dll,-30253</q4:Name>
+          <q4:Dir>In</q4:Dir>
+          <q4:App>System</q4:App>
+          <q4:Profile>Domain</q4:Profile>
+          <q4:LPort>5985</q4:LPort>
+          <q4:Protocol>6</q4:Protocol>
+          <q4:Desc>@FirewallAPI.dll,-30256</q4:Desc>
+          <q4:Active>true</q4:Active>
+          <q4:EmbedCtxt>@FirewallAPI.dll,-30252</q4:EmbedCtxt>
+        </q4:InboundFirewallRules>
+      </Extension>
+      <Name>Windows Firewall</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q5="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q5:RegistrySettings">
+        <q5:Policy>
+          <q5:Name>Include command line in process creation events</q5:Name>
+          <q5:State>Enabled</q5:State>
+          <q5:Explain>This policy setting determines what information is logged in security audit events when a new process has been created.
+
+This setting only applies when the Audit Process Creation policy is enabled. If you enable this policy setting the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
+
+If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.
+
+Default: Not configured
+
+Note: When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information such as passwords or user data.
+      </q5:Explain>
+          <q5:Supported>At least Windows Server 2012 R2, Windows 8.1 or Windows RT 8.1</q5:Supported>
+          <q5:Category>System/Audit Process Creation</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Back up log automatically when full</q5:Name>
+          <q5:State>Disabled</q5:State>
+          <q5:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
+
+If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+
+If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
+
+If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/Application</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Control Event Log behavior when the log file reaches its maximum size</q5:Name>
+          <q5:State>Disabled</q5:State>
+          <q5:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size.
+
+If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+
+If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/Application</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Specify the maximum log file size (KB)</q5:Name>
+          <q5:State>Enabled</q5:State>
+          <q5:Explain>This policy setting specifies the maximum size of the log file in kilobytes.
+
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/Application</q5:Category>
+          <q5:Numeric>
+            <q5:Name>Maximum Log Size (KB)</q5:Name>
+            <q5:State>Enabled</q5:State>
+            <q5:Value>1048576</q5:Value>
+          </q5:Numeric>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Back up log automatically when full</q5:Name>
+          <q5:State>Disabled</q5:State>
+          <q5:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
+
+If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+
+If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
+
+If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/Security</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Control Event Log behavior when the log file reaches its maximum size</q5:Name>
+          <q5:State>Disabled</q5:State>
+          <q5:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size.
+
+If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+
+If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/Security</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Specify the maximum log file size (KB)</q5:Name>
+          <q5:State>Enabled</q5:State>
+          <q5:Explain>This policy setting specifies the maximum size of the log file in kilobytes.
+
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/Security</q5:Category>
+          <q5:Numeric>
+            <q5:Name>Maximum Log Size (KB)</q5:Name>
+            <q5:State>Enabled</q5:State>
+            <q5:Value>1048576</q5:Value>
+          </q5:Numeric>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Back up log automatically when full</q5:Name>
+          <q5:State>Disabled</q5:State>
+          <q5:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
+
+If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+
+If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
+
+If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/System</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Control Event Log behavior when the log file reaches its maximum size</q5:Name>
+          <q5:State>Disabled</q5:State>
+          <q5:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size.
+
+If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+
+If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/System</q5:Category>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Specify the maximum log file size (KB)</q5:Name>
+          <q5:State>Enabled</q5:State>
+          <q5:Explain>This policy setting specifies the maximum size of the log file in kilobytes.
+
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Event Log Service/System</q5:Category>
+          <q5:Numeric>
+            <q5:Name>Maximum Log Size (KB)</q5:Name>
+            <q5:State>Enabled</q5:State>
+            <q5:Value>1048576</q5:Value>
+          </q5:Numeric>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Turn on Script Execution</q5:Name>
+          <q5:State>Enabled</q5:State>
+          <q5:Explain>This policy setting lets you configure the script execution policy, controlling which scripts are allowed to run.
+
+If you enable this policy setting, the scripts selected in the drop-down list are allowed to run.
+
+The "Allow only signed scripts" policy setting allows scripts to execute only if they are signed by a trusted publisher.
+
+The "Allow local scripts and remote signed scripts" policy setting allows any local scrips to run; scripts that originate from the Internet must be signed by a trusted publisher.
+
+The "Allow all scripts" policy setting allows all scripts to run.
+
+If you disable this policy setting, no scripts are allowed to run.
+
+Note: This policy setting exists under both "Computer Configuration" and "User Configuration" in the Local Group Policy Editor. The "Computer Configuration" has precedence over "User Configuration."
+
+If you disable or do not configure this policy setting, it reverts to a per-machine preference setting; the default if that is not configured is "No scripts allowed."</q5:Explain>
+          <q5:Supported>At least Microsoft Windows 7 or Windows Server 2008 family</q5:Supported>
+          <q5:Category>Windows Components/Windows PowerShell</q5:Category>
+          <q5:DropDownList>
+            <q5:Name>Execution Policy</q5:Name>
+            <q5:State>Enabled</q5:State>
+            <q5:Value>
+              <q5:Name>Allow local scripts and remote signed scripts</q5:Name>
+            </q5:Value>
+          </q5:DropDownList>
+        </q5:Policy>
+        <q5:Policy>
+          <q5:Name>Allow Remote Shell Access</q5:Name>
+          <q5:State>Enabled</q5:State>
+          <q5:Explain>This policy setting configures access to remote shells.
+
+If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
+
+If you set this policy to ‘disabled’, new remote shell connections are rejected by the server.</q5:Explain>
+          <q5:Supported>At least Windows Vista</q5:Supported>
+          <q5:Category>Windows Components/Windows Remote Shell</q5:Category>
+        </q5:Policy>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Servers</SOMName>
+    <SOMPath>windomain.local/Servers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>true</NoOverride>
+  </LinksTo>
+</GPO>
