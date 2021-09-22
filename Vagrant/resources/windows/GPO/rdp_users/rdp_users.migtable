@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-16"?>
+<MigrationTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/MigrationTable">
+  <Mapping>
+    <Type>GlobalGroup</Type>
+    <Source>Domain Admins@windomain.local</Source>
+    <Destination>Domain Admins@windomain.local</Destination>
+  </Mapping>
+  <Mapping>
+    <Type>UniversalGroup</Type>
+    <Source>Enterprise Admins@windomain.local</Source>
+    <Destination>Enterprise Admins@windomain.local</Destination>
+  </Mapping>
+  <Mapping>
+    <Type>Unknown</Type>
+    <Source>Remote Desktop Users</Source>
+    <Destination>Remote Desktop Users</Destination>
+  </Mapping>
+  <Mapping>
+    <Type>User</Type>
+    <Source>vagrant@windomain.local</Source>
+    <Destination>vagrant@windomain.local</Destination>
+  </Mapping>
+  <Mapping>
+    <Type>GlobalGroup</Type>
+    <Source>Domain Users@windomain.local</Source>
+    <Destination>Domain Users@windomain.local</Destination>
+  </Mapping>
+</MigrationTable>
