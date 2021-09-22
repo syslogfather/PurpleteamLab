@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{2C55A216-EFB4-4959-8F7B-E049518C4DF2}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">windomain.local</Domain>
+  </Identifier>
+  <Name>Disable Windows Defender</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2020-12-17T21:23:07</CreatedTime>
+  <ModifiedTime>2020-12-18T01:01:54</ModifiedTime>
+  <ReadTime>2020-12-18T01:03:21.0641722Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:S-1-5-21-2296914924-2001082525-608774050-1000G:DUD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-2296914924-2001082525-608774050-1000)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-2296914924-2001082525-608774050-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2296914924-2001082525-608774050-1000</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\vagrant</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2296914924-2001082525-608774050-513</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Users</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2296914924-2001082525-608774050-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2296914924-2001082525-608774050-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2296914924-2001082525-608774050-1000</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">WINDOMAIN\vagrant</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>false</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>13</VersionDirectory>
+    <VersionSysvol>13</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Windows/Registry" xsi:type="q1:RegistrySettings">
+        <q1:RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="AmsiEnable" status="AmsiEnable" image="10" changed="2020-12-18 01:01:54" uid="{D1534272-C9FB-491D-A48B-39551C57F89B}">
+            <q1:GPOSettingOrder>1</q1:GPOSettingOrder>
+            <q1:Properties action="C" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SOFTWARE\Microsoft\Windows Script Host\Settings" name="AmsiEnable" type="REG_DWORD" value="00000000">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+        </q1:RegistrySettings>
+      </Extension>
+      <Name>Windows Registry</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q2:RegistrySettings">
+        <q2:Policy>
+          <q2:Name>Turn off Windows Defender</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>This policy setting turns off Windows Defender.
+
+    If you enable this policy setting, Windows Defender does not run, and computers are not scanned for malware or other potentially unwanted software.
+
+    If you disable or do not configure this policy setting, by default Windows Defender runs and computers are scanned for malware and other potentially unwanted software.</q2:Explain>
+          <q2:Supported>At least Windows Vista</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Monitor file and program activity on your computer</q2:Name>
+          <q2:State>Disabled</q2:State>
+          <q2:Explain>This policy setting allows you to configure monitoring for file and program activity.
+
+    If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
+
+    If you disable this setting, monitoring for file and program activity will be disabled.</q2:Explain>
+          <q2:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Real-time Protection</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Scan all downloaded files and attachments</q2:Name>
+          <q2:State>Disabled</q2:State>
+          <q2:Explain>This policy setting allows you to configure scanning for all downloaded files and attachments.
+
+    If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
+
+    If you disable this setting, scanning for all downloaded files and attachments will be disabled.</q2:Explain>
+          <q2:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Real-time Protection</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Turn off real-time protection</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>This policy setting turns off real-time protection prompts for known malware detection.
+
+    Windows Defender alerts you when malware or potentially unwanted software attempts to install itself or to run on your computer.
+
+    If you enable this policy setting, Windows Defender will not prompt users to take actions on malware detections.
+
+    If you disable or do not configure this policy setting, Windows Defender will prompt users to take actions on malware detections.</q2:Explain>
+          <q2:Supported>At least Windows Vista</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Real-time Protection</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Turn on behavior monitoring</q2:Name>
+          <q2:State>Disabled</q2:State>
+          <q2:Explain>This policy setting allows you to configure behavior monitoring.
+
+    If you enable or do not configure this setting, behavior monitoring will be enabled.
+
+    If you disable this setting, behavior monitoring will be disabled.</q2:Explain>
+          <q2:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Real-time Protection</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Turn on process scanning whenever real-time protection is enabled</q2:Name>
+          <q2:State>Disabled</q2:State>
+          <q2:Explain>This policy setting allows you to configure process scanning when real-time protection is turned on. This helps to catch malware which could start when real-time protection is turned off.
+
+    If you enable or do not configure this setting,  a process scan will be initiated when real-time protection is turned on.
+
+    If you disable this setting, a process scan will not be initiated when real-time protection is turned on.</q2:Explain>
+          <q2:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Real-time Protection</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Scan network files</q2:Name>
+          <q2:State>Disabled</q2:State>
+          <q2:Explain>This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.
+
+    If you enable this setting, network files will be scanned.
+
+    If you disable or do not configure this setting, network files will not be scanned.</q2:Explain>
+          <q2:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Scan</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Scan removable drives</q2:Name>
+          <q2:State>Disabled</q2:State>
+          <q2:Explain>This policy setting allows you to manage whether or not to scan for malicious software and unwanted software in the contents of removable drives, such as USB flash drives, when running a full scan.
+
+    If you enable this setting, removable drives will be scanned during any type of scan.
+
+    If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.</q2:Explain>
+          <q2:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Defender/Scan</q2:Category>
+        </q2:Policy>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>true</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Servers</SOMName>
+    <SOMPath>windomain.local/Servers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>true</NoOverride>
+  </LinksTo>
+  <LinksTo>
+    <SOMName>Workstations</SOMName>
+    <SOMPath>windomain.local/Workstations</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>true</NoOverride>
+  </LinksTo>
+</GPO>
