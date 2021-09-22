@@ -3,7 +3,7 @@ Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Configuring auditing policy GPOs..."
 $GPOName = 'Domain Controllers Enhanced Auditing Policy'
 $OU = "ou=Domain Controllers,dc=childsplay,dc=local"
 Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Importing $GPOName..."
-Import-GPO -BackupGpoName $GPOName -Path "c:\vagrant\resources\GPO\Domain_Controllers_Enhanced_Auditing_Policy" -TargetName $GPOName -CreateIfNeeded
+Import-GPO -BackupGpoName $GPOName -Path "c:\vagrant\resources\windows\GPO\Domain_Controllers_Enhanced_Auditing_Policy" -TargetName $GPOName -CreateIfNeeded
 $gpLinks = $null
 $gPLinks = Get-ADOrganizationalUnit -Identity $OU -Properties name,distinguishedName, gPLink, gPOptions
 $GPO = Get-GPO -Name $GPOName
@@ -18,7 +18,7 @@ else
 $GPOName = 'Servers Enhanced Auditing Policy'
 $OU = "ou=Servers,dc=childsplay,dc=local"
 Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Importing $GPOName..."
-Import-GPO -BackupGpoName $GPOName -Path "c:\vagrant\resources\GPO\Servers_Enhanced_Auditing_Policy" -TargetName $GPOName -CreateIfNeeded
+Import-GPO -BackupGpoName $GPOName -Path "c:\vagrant\resources\windows\GPO\Servers_Enhanced_Auditing_Policy" -TargetName $GPOName -CreateIfNeeded
 $gpLinks = $null
 $gPLinks = Get-ADOrganizationalUnit -Identity $OU -Properties name,distinguishedName, gPLink, gPOptions
 $GPO = Get-GPO -Name $GPOName
@@ -34,7 +34,7 @@ else
 $GPOName = 'Workstations Enhanced Auditing Policy'
 $OU = "ou=Workstations,dc=childsplay,dc=local"
 Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Importing $GPOName..."
-Import-GPO -BackupGpoName $GPOName -Path "c:\vagrant\resources\GPO\Workstations_Enhanced_Auditing_Policy" -TargetName $GPOName -CreateIfNeeded
+Import-GPO -BackupGpoName $GPOName -Path "c:\vagrant\resources\windows\GPO\Workstations_Enhanced_Auditing_Policy" -TargetName $GPOName -CreateIfNeeded
 $gpLinks = $null
 $gPLinks = Get-ADOrganizationalUnit -Identity $OU -Properties name,distinguishedName, gPLink, gPOptions
 $GPO = Get-GPO -Name $GPOName
