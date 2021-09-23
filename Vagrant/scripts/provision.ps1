@@ -26,7 +26,7 @@ Get-NetAdapterBinding -ComponentID ms_tcpip6
 # https://support.microsoft.com/en-gb/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters" /v DisabledComponents /t REG_DWORD /d 255 /f
 
-if ($env:COMPUTERNAME -imatch 'vagrant') {
+if ($env:COMPUTERNAME -imatch 'win10') {
 
   Write-Host "$('[{0:HH:mm}]' -f (Get-Date)) Hostname is still the original one, skip provisioning for reboot..."
 
