@@ -1,0 +1,50 @@
+<user-mapping>
+    <authorize username="vagrant" password="vagrant">
+        <connection name="logger">
+            <protocol>ssh</protocol>
+            <param name="hostname">172.16.20.35</param>
+            <param name="port">22</param>
+            <param name="username">vagrant</param>
+            <param name="password">vagrant</param>
+        </connection>
+
+        <connection name="wef">
+            <protocol>rdp</protocol>
+            <param name="hostname">172.16.20.36</param>
+            <param name="port">3389</param>
+            <param name="username">vagrant</param>
+            <param name="password">vagrant</param>
+            <param name="create-drive-path">true</param>
+            <param name="enable-drive">true</param>
+            <param name="drive-path">/etc/guacamole/shares/wef</param>
+            <param name="security">nla</param>
+            <param name="ignore-cert">true</param>
+        </connection>
+      
+        <connection name="win10">
+            <protocol>rdp</protocol>
+            <param name="hostname">172.16.20.15</param>
+            <param name="port">3389</param>
+            <param name="username">vagrant</param>
+            <param name="password">vagrant</param>
+            <param name="create-drive-path">true</param>
+            <param name="enable-drive">true</param>
+            <param name="drive-path">/etc/guacamole/shares/win10</param>
+            <param name="security">nla</param>
+            <param name="ignore-cert">true</param>
+        </connection>
+
+        <connection name="dc">
+            <protocol>rdp</protocol>
+            <param name="hostname">172.16.20.10</param>
+            <param name="port">3389</param>
+            <param name="username">vagrant</param>
+            <param name="password">vagrant</param>
+            <param name="create-drive-path">true</param>
+            <param name="enable-drive">true</param>
+            <param name="drive-path">/etc/guacamole/shares/dc</param>
+            <param name="security">nla</param>
+            <param name="ignore-cert">true</param>
+        </connection>
+    </authorize>
+</user-mapping>
